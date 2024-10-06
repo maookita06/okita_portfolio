@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mao Okita portfolio</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/worksdetail2.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ntl6pzc.css"> <!-- Adobeフォント -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'jpt8foa',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+        // <!--Adobeフォント-->
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header id="top">
+        <section>
+            <div class="header_wap">
+                <span class="header_reftbar"></span>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href="../about.html">about</a></li>
+                        <li><a href="../work.html">works</a></li>
+                        <li><a href="../index.html#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_wap_sp">
+                <span class="header_reftbar_sp">
+                    <a href="../index.html">
+                        <p>Mao Okita <br>portfolio</p>
+                    </a>
+                </span>
+                <div class="menu">
+                    <div class="hamburger">
+                        <span></span>
+                    </div>
+                    <nav class="header_nav_sp">
+                        <ul>
+                            <li><a href="../index.html">home</a></li>
+                            <li><a href="../about.html">about</a></li>
+                            <li><a href="../work.html">works</a></li>
+                            <li><a href="../index.html#contact">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="works_title">
+                <h2>works</h2>
+            </div>
+            <div class="works_deteil box fadeIn">
+                <picture>
+                    <img src="../images/works_d2-100.jpg" alt="コワーキングスペース「WORKERS」メイン画像">
+                </picture>
+                <div class="deteil_title">
+                    <h3>コワーキングスペース「WORKERS」</h3>
+                </div>
+                <dl>
+                    <dt>カテゴリー</dt>
+                    <dd>ランディングページ</dd>
+                    <dt>制作範囲</dt>
+                    <dd>デザイン（トレース）</dd>
+                    <dt>制作期間</dt>
+                    <dd>1週間</dd>
+                    <dt>制作ツール</dt>
+                    <dd>Illustrator</dd>
+                    <dt>制作のポイント</dt>
+                    <dd>「仕事がもっと楽しくなる」をコンセプトに、明るく楽しい印象のイエローをベースカラーに、ブルーをアクセントカラーとして使用しています。
+                        また、文章だけでなくアイコンイラストを多く使うことで、親しみやすい雰囲気を伝えられるようにしました。</dd>
+                </dl>
+
+                <div class="wrap deteil_img">
+                    <picture>
+                        <div class="img deteil_img_pc box fadeIn"><img src="../images/d2_pc.jpg" alt="PCデザイン"
+                                class="popup"></div>
+                    </picture>
+                    <picture>
+                        <div class="img deteil_img_sp box fadeIn"><img src="../images/d2_sp.jpg" alt="PCデザイン"
+                                class="popup"></div>
+                    </picture>
+                </div>
+
+
+            </div>
+            <div id="modal" class="modal">
+                <span id="close">×</span>
+                <img class="modal-content" id="modalImage">
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div id="footer">
+            <div class="footer_wrop">
+                <nav class="footer_nav">
+                    <ul>
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href="../about.html">about</a></li>
+                        <li><a href="../work.html">works</a></li>
+                        <li><a href="../index.html#contact">contact</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer_sns">
+                    <li><a href="https://www.instagram.com/m06___design/" target="_blank" rel="noopener">
+                            <img src="../images/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://x.com/maodesign__" target="_blank" rel="noopener">
+                            <img src="../images/x.svg" alt="X"></a></li>
+                </ul>
+                <div class="footer_logo">
+                    <p>Mao Okita<br>Portfolio </p>
+                </div>
+                <p class="footer_copy"><small>&copy;2024 Mao Okita</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <div>
+        <p class="totop">
+            <a href="#top">
+                <img src="../images/totop_1.svg" alt="トップに戻る">
+            </a>
+        </p>
+    </div>
+    <script>
+        $(function () {
+            $(".hamburger").click(function (e) {
+                e.stopPropagation();
+                $(".hamburger").toggleClass("open");
+                $(".header_nav_sp").fadeToggle();
+
+
+                if ($(".hamburger").hasClass("open")) {
+                    $(document).on("click.closeMenu", function () {
+                        $(".hamburger").removeClass("open");
+                        $(".header_nav_sp").fadeOut();
+                        $(document).off("click.closeMenu");
+                    });
+                }
+            });
+
+            $(".header_nav_sp a").click(function () {
+                $(".hamburger").removeClass("open");
+                $(".header_nav_sp").fadeOut();
+            });
+
+            $(window).on("beforeunload", function () {
+                $(".hamburger").removeClass("open");
+                $(".header_nav_sp").fadeOut();
+            });
+
+            $(".header_nav_sp, .hamburger").click(function (e) {
+                e.stopPropagation();
+            });
+        });
+
+        $(function () {
+            var btn = $('.totop');
+
+            $(window).on('load scroll', function () {
+                if ($(this).scrollTop() > 100) {
+                    btn.addClass('active_01');
+                } else {
+                    btn.removeClass('active_01');
+                }
+            });
+
+            btn.on('click', function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                });
+            });
+        });
+
+        const modal = document.getElementById('modal');
+
+        const modalImg = document.getElementById('modalImage');
+
+        const imgs = document.querySelectorAll('.popup');
+
+        const closeSpan = document.getElementById('close');
+
+        for (let img of imgs) {
+            img.onclick = function () {
+
+
+                modal.style.opacity = "1";
+                modal.style.visibility = "visible";
+
+                modalImg.src = this.src;
+            }
+        }
+
+        closeSpan.onclick = function () {
+            modal.style.opacity = "0";
+            modal.style.visibility = "hidden";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.opacity = "0";
+                modal.style.visibility = "hidden";
+            }
+        }
+
+        $(window).on('scroll load', function () {
+            var scroll = $(this).scrollTop();
+            var windowHeight = $(window).height();
+            $('.fadeIn').each(function () {
+                var cntPos = $(this).offset().top;
+                if (scroll > cntPos - windowHeight + windowHeight / 3) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+
+        $(window).scroll(function () {
+            $('.blur').each(function () {
+                var elemPos = $(this).offset().top,
+                    scroll = $(window).scrollTop(),
+                    windowHeight = $(window).height();
+
+                if (scroll > elemPos - windowHeight + 150) {
+                    $(this).addClass('scrollin');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
