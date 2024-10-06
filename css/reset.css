@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* リセット */
+
+html,
+body,
+header,
+main,
+body,
+section,
+div,
+p,
+dl,
+h4,
+h5{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #383838;
+    font-family: "fot-tsukuardgothic-std", sans-serif, "Yu Gothic","Hiragino Kaku Gothic ProN","Helvetica Neue","Helvetica", "Hiragino Sans","Arial","Meiryo";
+    font-feature-settings: "palt";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    overflow-x:hidden;
+}
+body{
+    overflow-x: hidden;
+    padding: 20px;
+    background-image: url(../images/back-100.jpg);
+    background-size:cover;
+    background-position: top0 left0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s; 
+}
+a:hover {
+    opacity: 0.7; 
+}
+ul,
+li{
+    list-style: none;
+    color: #2c82a6;
+    padding: 0;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
