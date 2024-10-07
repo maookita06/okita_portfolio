@@ -1,0 +1,252 @@
+@charset "utf-8";
+.works{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+main{
+    max-width: 1880px;
+    border-right: solid #2c82a6;
+    border-left: solid #2c82a6;
+    margin: 0 auto;
+}
+h2{
+font-family: quincy-cf, serif;
+font-weight: 700;
+font-style: normal;
+color: #2c82a6;
+font-size: 6.7vw;
+padding:146px 0 115px ;
+text-align: center;
+margin: 0 auto;
+}
+
+.works_nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 21px;
+}
+
+.works_nav ul li a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    position: relative;
+    padding: 0 10px;
+    text-align: center;
+    opacity: 1.0;
+  }
+  
+.works_nav ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -8px;
+    width: 0;
+     height: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #2c82a6;
+    border-width: 7.5px 0px 7.5px 12.99px; 
+    transition: .6s;
+    opacity: 0;
+  }
+
+  .works_nav ul li a:hover {
+    color: #2c82a6;
+  }
+  
+  .works_nav ul li a:hover:after {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+
+h3{
+font-family: quincy-cf, serif;
+font-weight: 700;
+font-style: normal;
+color: #2c82a6;
+font-size: 3.1vw;
+text-align: left;
+margin: 0 auto;
+padding-bottom: 115px;
+padding-top: 132px;
+}
+
+h4{
+    font-size: 30px;
+    color: #2c82a6;
+    padding-bottom: 65px;
+}
+
+.web_list{
+    border: solid #2c82a6;
+    width: 303px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+
+h5{
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.title{
+    border-top: solid #2c82a6;
+    width: 300px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.web ul,
+.banner ul,
+.photo ul{ 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:24px;
+}
+
+.photograph{
+    padding-bottom: 120px;
+}
+
+@media screen and (max-width: 1018px) {
+.web ul,
+.banner ul,
+.photo ul{ 
+    justify-content:center;
+    gap: 24px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.works_nav ul li a::after {
+    display: none;
+}
+
+.works_nav ul li a {
+    display: inline-block;
+}
+.works h2{
+    font-size: 15.3vw;
+    padding: 70px 0;
+}
+    
+.works_nav ul {
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+    width: 100%;
+}
+    
+.works_nav li{
+    padding-bottom: 35px;
+    font-size: 23px;
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    padding-left: 12px;
+  }
+  .arrow:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent #2c82a6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+    
+h3{
+    font-size: 12.8vw;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 0;
+}
+
+h4 {
+    font-size: 5.64vw;
+    color: #2c82a6;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.web,
+.banner,
+.photo{
+    display: block;
+}
+
+.web ul,
+.banner ul,
+.photo ul{
+    display: block;
+}
+
+.web{
+    padding-bottom: 90px;
+}
+
+.banner{
+    padding-bottom: 175px;
+}
+
+.web_list{
+    margin: 50px auto;
+}
+}
+
+.web__items.offs .effect {
+    opacity: 0;
+    transform: translate(0, 100px);
+    -webkit-transform: translate(0, 100px);
+  }
+  .web__items.ons .effect {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+    .web__items.ons .delay-1 {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  
+  .web__items.ons .delay-2 {
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+  }
+  
+  .web__items.ons .delay-3 {
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+  }
+  
+  .web__items.ons .delay-4 {
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
+  }
+
+  .web__items.ons .delay-5 {
+    -webkit-transition-delay: 2.5s;
+    transition-delay: 2.5s;
+  }
+
+  .web__items.ons .delay-6 {
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+  }
+  
